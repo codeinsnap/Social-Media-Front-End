@@ -9,8 +9,10 @@ const useStyles = makeStyles((theme)=>({
 
     fab:{
         position: "fixed",
-        right: 60,
-        bottom: 25,
+        right: 30,
+        bottom: 20,
+        color: "white",
+        backgroundColor: "#4C0070",
         
     },
     container:{
@@ -58,8 +60,8 @@ function Add ()  {
     };
     return (
         <>
-            <Tooltip title="Add" aria-labelledb="add" onClick={()=> setOpen(true)}>
-                <Fab color= "primary" className={classes.fab}>
+            <Tooltip title="Add"  onClick={()=> setOpen(true)}>
+                <Fab  className={classes.fab}>
                     <AddIcon />
                 </Fab>
             </Tooltip>

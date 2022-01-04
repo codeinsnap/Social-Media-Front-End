@@ -9,7 +9,18 @@ import {
     Divider,
   } from "@material-ui/core";
   import { AvatarGroup } from "@material-ui/lab";
-  
+  import boat from './Assests/boat.jpg';
+  import Profile1 from './Assests/profile1.jpg';
+  import Profile2 from './Assests/profile2.jpg';
+  import Profile3 from './Assests/profile3.jpg';
+  import Profile4 from './Assests/profile4.jpg';
+  import gallery1 from './Assests/gallery1.jpg';
+  import gallery2 from './Assests/gallery2.jpg';
+  import gallery3 from './Assests/gallery3.jpg';
+
+
+
+
   const useStyles = makeStyles((theme) => ({
     container: {
       paddingTop: theme.spacing(10),
@@ -36,31 +47,31 @@ import {
         <Typography className={classes.title} >
           Online Friends
         </Typography>
-        <AvatarGroup max={6} style={{ marginBottom: 20 }}>
+        <AvatarGroup max={6} style={{ marginBottom: 10 }}>
           <Avatar
             alt="Remy Sharp"
-            src="https://material-ui.com/static/images/avatar/1.jpg"
+            src={Profile1}
           />
           <Avatar
             alt="Travis Howard"
-            src="https://material-ui.com/static/images/avatar/2.jpg"
+            src={Profile2}
           />
           <Avatar
             alt="Cindy Baker"
-            src="https://material-ui.com/static/images/avatar/3.jpg"
+            src={Profile3}
           />
           <Avatar alt="Agnes Walker" src="" />
           <Avatar
             alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/6.jpg"
+            src={Profile4}
           />
           <Avatar
             alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/7.jpg"
+            src={Profile2}
           />
           <Avatar
             alt="Trevor Henderson"
-            src="https://material-ui.com/static/images/avatar/8.jpg"
+            src=""
           />
         </AvatarGroup>
         <Typography className={classes.title} >
@@ -69,37 +80,37 @@ import {
         <ImageList rowHeight={70} style={{ marginBottom: 15 }} cols={2}>
           <ImageListItem>
             <img
-              src="https://material-ui.com/static/images/image-list/breakfast.jpg"
+              src={boat}
               alt=""
             />
           </ImageListItem>
           <ImageListItem>
             <img
-              src="https://material-ui.com/static/images/image-list/burgers.jpg"
+              src={gallery1}
               alt=""
             />
           </ImageListItem>
           <ImageListItem>
             <img
-              src="https://material-ui.com/static/images/image-list/camera.jpg"
+              src={gallery2}
               alt=""
             />
           </ImageListItem>
           <ImageListItem>
             <img
-              src="https://material-ui.com/static/images/image-list/morning.jpg"
+              src={gallery3}
               alt=""
             />
           </ImageListItem>
           <ImageListItem>
             <img
-              src="https://material-ui.com/static/images/image-list/hats.jpg"
+              src={Profile3}
               alt=""
             />
           </ImageListItem>
           <ImageListItem>
             <img
-              src="https://material-ui.com/static/images/image-list/vegetables.jpg"
+              src=""
               alt=""
             />
           </ImageListItem>

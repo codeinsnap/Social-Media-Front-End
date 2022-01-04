@@ -4,6 +4,10 @@ import {Mail, Notifications, Search} from '@material-ui/icons'
 import profile from './Assests/profilepic.jpg'
 
 const useStyles = makeStyles((theme)=>({ 
+
+    bar:{
+        backgroundColor:"#1F1D36",
+    },
     
     toolbar:{
             display: "flex",
@@ -67,10 +71,10 @@ function Navbar () {
     const classes = useStyles();
     
     return (
-        <AppBar>
+        <AppBar className={classes.bar}>
             <Toolbar className={classes.toolbar}>
-                 <Typography variant='h6' className={classes.logoLg}> Material UI Website </Typography>
-                 <Typography variant='h6' className={classes.logoSm}> Material UI </Typography>
+                 <Typography variant='h6' className={classes.logoLg}> Social Media  </Typography>
+                 <Typography variant='h6' className={classes.logoSm}> S M </Typography>
                  <div  className={classes.search}>
                      <Search />
                      <InputBase placeholder="Search..." className={classes.input} />

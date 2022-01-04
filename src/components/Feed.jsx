@@ -1,8 +1,9 @@
 import React from 'react'
 import { makeStyles, Container, Typography } from '@material-ui/core';
 import { Home } from '@material-ui/icons';
-import Post from './Post';
-
+import Post from './Cards/Post';
+import Post2 from './Cards/Post2';
+import Post3 from './Cards/Post3';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -17,8 +18,8 @@ function Feed () {
     return (
         <Container className={classes.container}> 
             <Post />
-            <Post />
-            <Post />
+            <Post2 />
+            <Post3 />
            
         </Container>
     )
